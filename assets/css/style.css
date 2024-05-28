@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #678edf;
+    background-color: #0A6847;
     padding: 1em 0.5em;
     position: sticky;
     top: 0;
@@ -34,6 +34,11 @@ body {
 
 .navbar ul li a:hover {
     color: #c8c8c8;
+}
+
+.navbar ul li a.active {
+    color: #00ffa4;
+    font-weight: medium;
 }
 
 .form-wrapper {
@@ -97,7 +102,7 @@ h3 {
     padding: 10px;
     margin: 10px auto;
     text-align: center;
-    background-color: #678edf;
+    background-color: #0A6847;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -106,7 +111,7 @@ h3 {
 }
 
 #registrationForm input[type="submit"]:hover {
-    background-color: #5671d8;
+    background-color: #002f1e;
 }
 
 
@@ -161,7 +166,6 @@ th {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: red;
 }
 
 .profile .user-card .user-info {
@@ -191,4 +195,3 @@ th {
     object-fit: cover;
     border-radius: 8px;
 }
-
