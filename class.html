@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 576px) {
+            aside {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            div {
+                padding: 10px;
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            aside {
+                padding: 5px;
+                margin: 2px;
+            }
+
+            div {
+                padding: 5px;
+                margin: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <aside>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis velit ab ullam voluptates ad alias totam
+                doloremque consectetur sunt culpa?
+            </aside>
+
+            <aside>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempore totam sint error officiis
+                porro, nisi ipsa dolores veniam magnam maiores ratione corporis perspiciatis ab atque eligendi itaque
+                cum! Voluptatem inventore quasi porro quidem minima tenetur, veniam praesentium enim a.
+            </aside>
+
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laudantium.</div>
+        </section>
+    </main>
+</body>
+
+</html>

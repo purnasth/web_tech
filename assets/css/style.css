@@ -50,6 +50,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+    .form-wrapper {
+        width: 80%;
+    }
+}
+
 h3 {
     text-align: center;
     margin: 20px 0;
@@ -77,13 +83,21 @@ h3 {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    gap: 0.5em;
+    gap: 1em;
 }
 
 #registrationForm .form-group.role>div {
     display: flex;
     align-items: center;
     gap: 0.75em;
+}
+
+@media screen and (max-width: 768px) {
+    #registrationForm .form-group.role {
+        align-items: start;
+        flex-direction: column;
+    }
+
 }
 
 #registrationForm input {
@@ -128,6 +142,7 @@ h3 {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 table,
@@ -145,6 +160,55 @@ td {
 th {
     background-color: #f2f2f2;
 }
+
+img {
+
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 678px) {
+    #usersContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #usersContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1480px) {
+    #usersContainer {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table,
+    th,
+    td {
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
 
 .profile {
     width: 40%;
@@ -174,6 +238,23 @@ th {
 
 .profile .user-card .user-info p {
     margin: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .profile {
+        width: 80%;
+    }
+
+    .profile .user-card {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .profile .user-card img {
+        width: 8rem;
+        height: 8rem;
+    }
+
 }
 
 .gallery-section {
